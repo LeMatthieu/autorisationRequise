@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 2,
+    "name": "checkage",
+    "version": "1.0",
+  
+    "description": "vérifier l'age sur le site de mozilla.org",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["checkage.js"]
+      }
+    ]
+  
+  }
+  
